@@ -10,7 +10,3 @@ const Footer = () => {
 };
 export default Footer;
 
-
-//comandos para cmd para git
-//ver total de branches
-git branch
