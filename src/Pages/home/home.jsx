@@ -23,7 +23,7 @@ const Home = () => {
             {data.header.title}
             <span> חייך </span> 
           </h6>
-          <button className="btn" onClick={handlerButton}>{data.header.buttonText}</button>
+          <button className="btn btn-secondary" onClick={handlerButton}>{data.header.buttonText}</button>
         </div>
       </div>
 

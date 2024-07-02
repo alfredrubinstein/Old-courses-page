@@ -1,59 +1,58 @@
 import ContactHeader from "../../Images/7.jpg";
-import "./contact.css";
-const Contact = () => {
+import { useNavigate } from "react-router-dom";
+const Register = ({ onLogin }) => {
+
+const navigate = useNavigate();
+const handleRegister=() => navigate("/")
   return (
     <>
       <div className="contact">
-        <img src={ContactHeader} alt="" />
+        <img src={ContactHeader} alt="Contact Header" />
       </div>
 
-      {/* Contact Form */}
-      <div className="contact_form container">
+      {/* Register Form */}
+      <div className="register_form container">
         <div className="row justify-content-center">
           <div className="col-sm-9">
             <form action="">
-              <h6>צור איתנו קשר עכשיו</h6>
+              <h6>הרשמה למשתמשים חדשים</h6>
               <div className="form-group">
-                <label htmlFor="">שם</label>
+                <label htmlFor="name">שם</label>
                 <input
                   type="text"
                   className="form-control"
+                  id="name"
                   placeholder="השם שלך"
                   required
                 />
               </div>
 
               <div className="form-group">
-                <label htmlFor="">אמייל</label>
+                <label htmlFor="email">אמייל</label>
                 <input
                   type="email"
                   className="form-control"
+                  id="email"
                   placeholder="האמייל שלך"
                   required
                 />
               </div>
 
               <div className="form-group">
-                <label htmlFor="">מס' טלפון</label>
+                <label htmlFor="password">סיסמה</label>
                 <input
-                  type="number"
+                  type="password"
                   className="form-control"
-                  placeholder="הכנס מספר טלפון"
+                  id="password"
+                  placeholder="הסיסמה שלך"
                   required
                 />
               </div>
 
-              <div className="form-group">
-                <label htmlFor="">איך נוכל לעזור</label>
-                <textarea
-                  rows="6"
-                  className="form-control"
-                  required
-                  placeholder="איך נוכל לעזור"
-                ></textarea>
-              </div>
-
-              <button className="btn btn-primary">שלח עכשיו</button>
+              <button type="submit" className="btn btn-primary" onClick={handleRegister}>הירשם</button>
+              <button type="button" className="btn btn-primary" onClick={() => navigate("/login")}>
+                יש לך כבר חשבון?
+              </button>
             </form>
           </div>
         </div>
@@ -61,4 +60,5 @@ const Contact = () => {
     </>
   );
 };
-export default Contact;
+
+export default Register;
