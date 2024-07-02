@@ -1,7 +1,8 @@
 import "./App.css";
+
 import { Navbar, Footer } from "./Components";
 import { BrowserRouter , Routes, Route } from "react-router-dom";
-import { Home, About, Gallery, Contact, Courses } from "./Pages";
+import { Home, About, Gallery, Contact, Course, Courses } from "./Pages";
 const App = () => {
   return (
     <>
@@ -12,7 +13,8 @@ const App = () => {
           <Route path="/about" element={<About />}></Route>
           <Route path="/gallery" element={<Gallery />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/course" element={<Courses/>}></Route>
+          <Route path="/courses" element={<Courses/>}></Route>
+          <Route path="/course/:id" element={<Course/>}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
@@ -20,3 +22,4 @@ const App = () => {
   );
 };
 export default App;
+

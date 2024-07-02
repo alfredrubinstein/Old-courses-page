@@ -1,9 +1,26 @@
-import React from 'react'
+// Courses.js
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import courses from '../Course/coursesData';
 
-export default function Courses() {
+const Courses = () => {
+  const navigate = useNavigate();
+
+  const handleClick = (id) => {
+    navigate.push(`/course/${id}`);
+  };
+
   return (
     <div>
-      <h1>Courses</h1>
+      {courses.map(course => (
+        <button key={course.id} onClick={() => handleClick(course.id)}>
+          <img src={course.imageUrl} alt={course.name} />
+          <h2>{course.name}</h2>
+          <p>{course.title}</p>
+        </button>
+      ))}
     </div>
-  )
-}
+  );
+};
+
+export default Courses;
