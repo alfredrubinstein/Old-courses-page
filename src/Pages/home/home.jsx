@@ -1,10 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import data from './data';
 import "./home.css";
 
 const Home = () => {
   const handlerButton = () => {
-    // Al presionarse en el botón se redirecciona en la misma página en la sección de about
     window.location.href = "#about";
   };
 
@@ -42,7 +42,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    
+  
       {/* Second Header */}
       <div className="second_header">
         <div>
@@ -61,14 +61,13 @@ const Home = () => {
                 <div className="box_content">
                   <h6>{item.title}</h6>
                   <p>{item.description}</p>
-                  <button className="btn">{item.buttonText}</button>
+                  <Link to={`/course/${item.id}`} className="btn">{item.buttonText}</Link>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
-
 
       {/* Details */}
       <div className="details container">
@@ -80,7 +79,7 @@ const Home = () => {
                 <div className="box_content">
                   <h6>{item.title}</h6>
                   <p>{item.description}</p>
-                  <button className="btn">{item.buttonText}</button>
+                  <Link to={`/course/${item.id}`} className="btn">{item.buttonText}</Link>
                 </div>
               </div>
             </div>

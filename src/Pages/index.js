@@ -4,4 +4,6 @@ export { default as Gallery } from "./Gallery/gallery";
 export { default as Contact } from "./contact/contact";
 export { default as Course} from "./Course/Course";
 export { default as Courses} from "./Courses/Courses";
+export { default as Login} from "./Login/Login";
+export { default as Seccion} from "./Seccion/Seccion";
 

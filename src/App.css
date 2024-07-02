@@ -3,7 +3,7 @@
 
 /* Global Variable */
 :root {
-  --main: #f60b0b;
+  --main: #626692;
 }
 
 * {
@@ -34,5 +34,5 @@ html::-webkit-scrollbar-thumb {
   background: var(--main);
 }
 html::-webkit-scrollbar-track {
-  background: #000;
+  background: #a68c8c;
 }

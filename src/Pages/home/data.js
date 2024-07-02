@@ -2,7 +2,7 @@
 const data = {
     header: {
       img: require("../../Images/8.jpg"),
-      title: "בוא תפתח את חלום חייך",
+      title: "בוא תפתח את חלום",
       buttonText: "קרא עוד"
     },
     about: {
@@ -74,4 +74,16 @@ const data = {
   };
   
   export default data;
+  
+
+
+
+
+
+
+
+
+
+
+
   
