@@ -1,11 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import data from './data';
 import styles from './Home.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
   const handlerButton = () => {
-    window.location.href = "#About";
+navigate('/about');
   };
 
   return (
@@ -28,16 +29,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div id="About"></div>
-      <div className={styles.AboutContainer}>
-        <div className={styles.row}>
-          <img src={data.About.img} className={styles.AboutImage} alt="" />
-        </div>
-        <h6>{data.About.title}</h6>
-        <h5>{data.About.subtitle}</h5>
-        <p>{data.About.description}</p>
-      </div> */}
-
       {/* Second Header -foto de separacion*/}
       <div className={styles.second_header}>
         <div>
@@ -45,26 +36,6 @@ const Home = () => {
         </div>
         <div className={styles.Overlay}></div>
       </div>
-
-      {/* Details -cursos
-      <div className={styles.DetailsContainer}>
-          <div className={styles.details}>
-            {data.details.map((item, index) => (
-              <div key={index} className={styles.box}>
-                <img src={item.img} alt={item.title} />
-                <div className={styles.box_content}>
-                  <h6>{item.title}</h6>
-                  <p>{item.description.length > 20 ? `${item.description.substring(0, 100)}...` : item.description}</p>
-                </div>
-                <div className={styles.courseBtn}>
-                <Link to={`/course/${item.id}`} className={styles.btn}>
-                    <>קרא עוד</>
-                  </Link>
-                  </div>
-              </div>
-            ))}
-          </div>
-        </div> */}
     </>
   );
 };

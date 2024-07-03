@@ -1,59 +1,65 @@
+import React from "react";
 import ContactHeader from "../../Images/7.jpg";
-import "./contact.css";
+import styles from "./contact.module.css";
+
 const Contact = () => {
   return (
     <>
-      <div className="Contact">
+      <div className={styles.Contact}>
         <img src={ContactHeader} alt="" />
       </div>
 
       {/* Contact Form */}
-      <div className="Contact_form container">
-        <div className="row justify-content-center">
-          <div className="col-sm-9">
+      <div className={styles.Contact_form}>
+        <div className={styles.row}>
+          <div className={styles["col-sm-9"]}>
             <form action="">
               <h6>צור איתנו קשר עכשיו</h6>
-              <div className="form-group">
-                <label htmlFor="">שם</label>
+              <div className={styles["form-group"]}>
+                <label htmlFor="name">שם</label>
                 <input
                   type="text"
-                  className="form-control"
+                  id="name"
+                  className={styles["form-control"]}
                   placeholder="השם שלך"
                   required
                 />
               </div>
 
-              <div className="form-group">
-                <label htmlFor="">אמייל</label>
+              <div className={styles["form-group"]}>
+                <label htmlFor="email">אמייל</label>
                 <input
                   type="email"
-                  className="form-control"
+                  id="email"
+                  className={styles["form-control"]}
                   placeholder="האמייל שלך"
                   required
                 />
               </div>
 
-              <div className="form-group">
-                <label htmlFor="">מס' טלפון</label>
+              <div className={styles["form-group"]}>
+                <label htmlFor="phone">מס' טלפון</label>
                 <input
                   type="number"
-                  className="form-control"
+                  id="phone"
+                  className={styles["form-control"]}
                   placeholder="הכנס מספר טלפון"
                   required
                 />
               </div>
 
-              <div className="form-group">
-                <label htmlFor="">איך נוכל לעזור</label>
+              <div className={styles["form-group"]}>
+                <label htmlFor="message">איך נוכל לעזור</label>
                 <textarea
                   rows="6"
-                  className="form-control"
+                  id="message"
+                  className={styles["form-control"]}
                   required
                   placeholder="איך נוכל לעזור"
                 ></textarea>
               </div>
 
-              <button className="btn btn-primary">שלח עכשיו</button>
+              <button className={styles.btn}>שלח עכשיו</button>
             </form>
           </div>
         </div>
@@ -61,4 +67,5 @@ const Contact = () => {
     </>
   );
 };
+
 export default Contact;

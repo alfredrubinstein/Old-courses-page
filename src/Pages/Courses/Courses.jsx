@@ -15,21 +15,20 @@ const Courses = () => {
       <div className={styles.details}>
         {courses.map((course, index) => ( 
           <div key={index} className={styles.box} onClick={() => handleClick(course.id)}> 
-          {/* Changed data.details to courses, and added onClick */}
             <img src={course.img} alt={course.title} />
             <div className={styles.box_content}>
+              <div className={styles.title}>
               <h6>{course.title}</h6>
+              </div>
+              <div className={styles.description}>
               <p>
-                {course.description.length > 100 
-                  ? `${course.description.substring(0, 100)}...` 
-                  : course.description}
+                {course.description.length > 100 ? `${course.description.substring(0, 100)}...` : course.description}
               </p> 
-              {/* Increased character limit to 100 for better readability */}
+              </div>
             </div>
             <div className={styles.courseBtn}>
-              <div className={styles.btn}>
+              <div handleClick={handleClick} className={styles.btn}>
                 <>קרא עוד</>
-                 {/* Removed extra button element and adjusted styling */}
               </div>
             </div>
           </div>

@@ -1,35 +1,48 @@
 import React from 'react';
 import user from './userData';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from './dashboard.module.css';
 
 const Dashboard = () => {
-  const { name, email, registeredCourses } = user;
+  const { name, email, registeredCourses, stats, notifications } = user;
 
   return (
-    <div className="container mt-5">
-      <div className="row mb-4">
-        <div className="col-md-12">
-          <h2>Dashboard de {name}</h2>
-          <p>Email: {email}</p>
-        </div>
+    <div className={styles.container}>
+      <div className={styles.header}>
+        <h2>אזור אישי של {name}</h2>
+        <p>אמייל: {email}</p>
       </div>
-      <div className="row">
-        <div className="col-md-12">
-          <h3>Cursos Registrados</h3>
-          <div className="row">
-            {registeredCourses.map(course => (
-              <div key={course.id} className="col-md-4 mb-4">
-                <div className="card">
-                  <img src={course.imageUrl} className="card-img-top" alt={course.name} />
-                  <div className="card-body">
-                    <h5 className="card-title">{course.name}</h5>
-                    <p className="card-text">{course.title}</p>
-                    <button className="btn btn-primary">Ir al curso</button>
-                  </div>
-                </div>
-              </div>
-            ))}
+
+      <div className={styles.stats}>
+        {stats.map(stat => (
+          <div key={stat.id} className={styles.statItem}>
+            <h3>{stat.value}</h3>
+            <p>{stat.label}</p>
           </div>
+        ))}
+      </div>
+
+      <div className={styles.notifications}>
+        <h3>הודאות</h3>
+        {notifications.map(notification => (
+          <div key={notification.id} className={styles.notification}>
+            <p>{notification.message}</p>
+          </div>
+        ))}
+      </div>
+
+      <div>
+        <h3>קורסים שנרשמתה אליהם</h3>
+        <div className={styles.row}>
+          {registeredCourses.map(course => (
+            <div key={course.id} className={styles.courseCard}>
+              <img src={course.imageUrl} alt={course.name} />
+              <div className={styles.courseCardBody}>
+                <h5>{course.name}</h5>
+                <p>{course.title}</p>
+                <button className={styles.btn}>פתח קורס</button>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

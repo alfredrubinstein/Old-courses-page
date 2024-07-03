@@ -1,17 +1,20 @@
-import { useNavigate } from "react-router-dom";
-import ContactHeader from "../../Images/7.jpg";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import ContactHeader from '../../Images/7.jpg';
+import styles from './login.module.css';
 
 const Login = ({ onRegister }) => {
   const navigate = useNavigate();
   const handleRegister = () => navigate("/");
+
   return (
     <>
-      <div className="Contact">
+      <div className={styles.contact}>
         <img src={ContactHeader} alt="Contact Header" />
       </div>
 
       {/* Login Form */}
-      <div className="login_form container">
+      <div className={`${styles.login_form} container`}>
         <div className="row justify-content-center">
           <div className="col-sm-9">
             <form action="">
@@ -38,15 +41,13 @@ const Login = ({ onRegister }) => {
                 />
               </div>
 
-              <button type="submit" className="btn btn-primary" onClick={handleRegister}>
+              <button type="submit" className={`btn ${styles.btn}`} onClick={handleRegister}>
                 הכנס
               </button>
 
               <button
                 type="button"
-                className="btn btn-primary"
-
-               
+                className={`btn ${styles.btn_secondary}`}
                 onClick={() => navigate("/register")}
               >
                 משתמש חדש

@@ -1,0 +1,42 @@
+/* About.module.css */
+.About_header img {
+    width: 100%;
+  }
+  
+  .About {
+    padding: 2rem 0;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .colsm5 {
+    flex: 0 0 41.666667%;
+  }
+  .colsm6 {
+    flex: 0 0 50%;
+  }
+  
+  .imgfluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  h6 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  

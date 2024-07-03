@@ -1,8 +1,8 @@
-import "./footer.css";
+import styles from "./footer.module.css";
 const Footer = () => {
   return (
     <>
-      <footer>
+      <footer className={styles.footer}>
         <p>Copyright &copy;  עולם ההיטק לילדים</p>
       </footer>
     </>
