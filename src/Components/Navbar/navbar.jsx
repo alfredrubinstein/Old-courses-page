@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
+import Logo from "../Logo/Logo";
 
 const Navbar = () => {
   const [isNavbarFixed, setIsNavbarFixed] = useState(false);
@@ -31,11 +32,10 @@ const Navbar = () => {
       className={`${styles.navbar} ${isNavbarFixed ? styles.navbarFixed : styles.navbarTransparent}`}
     >
       <div className={styles.container}>
-        <NavLink to="/" className={styles.logo}>
-          <span>עולם</span>טק
-        </NavLink>
 
-        {/* Desktop Navigation Links */}
+<NavLink to='/'> <Logo/> </NavLink>       
+
+
         <div className={`hidden md:flex ${styles.desktopLinks}`}>
           {links.map((link) => (
             <NavLink

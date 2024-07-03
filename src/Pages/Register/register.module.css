@@ -1,0 +1,55 @@
+/* General styling */
+.contact {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .register_form {
+    background-color: #f0f8ff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff69b4; /* Pink color */
+    margin-bottom: 20px;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  .formGroup label {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .form-control {
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #1e90ff; /* Dodger blue */
+    margin-top: 5px;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #ff69b4; /* Pink color */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ff1493; /* Deep pink */
+  }
+  

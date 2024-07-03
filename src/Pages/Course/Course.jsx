@@ -13,8 +13,8 @@ const Course = () => {
 
   return (
     <div className={styles.courseContainer}>
-      <img src={course.img} alt={course.title} />
       <h1>{course.title}</h1>
+      <img src={course.img} alt={course.title} />
       <div className={styles.details}>
         <p>{course.description}</p>
         <button className={styles.btn}>הרשם</button>

@@ -30,12 +30,12 @@ navigate('/about');
       </div>
 
       {/* Second Header -foto de separacion*/}
-      <div className={styles.second_header}>
+      {/* <div className={styles.second_header}>
         <div>
           <img src={data.secondHeader.img} alt="" />
         </div>
         <div className={styles.Overlay}></div>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -1,22 +1,25 @@
+import React from "react";
 import ContactHeader from "../../Images/7.jpg";
 import { useNavigate } from "react-router-dom";
-const Register = ({ onLogin }) => {
+import styles from './register.module.css';
 
-const navigate = useNavigate();
-const handleRegister=() => navigate("/")
+const Register = ({ onLogin }) => {
+  const navigate = useNavigate();
+  const handleRegister = () => navigate("/");
+
   return (
     <>
-      <div className="Contact">
+      <div className={styles.contact}>
         <img src={ContactHeader} alt="Contact Header" />
       </div>
 
       {/* Register Form */}
-      <div className="register_form container">
+      <div className={`${styles.register_form} container`}>
         <div className="row justify-content-center">
           <div className="col-sm-9">
             <form action="">
-              <h6>הרשמה למשתמשים חדשים</h6>
-              <div className="form-group">
+              <h6 className={styles.title}>הרשמה למשתמשים חדשים</h6>
+              <div className={styles.formGroup}>
                 <label htmlFor="name">שם</label>
                 <input
                   type="text"
@@ -27,7 +30,7 @@ const handleRegister=() => navigate("/")
                 />
               </div>
 
-              <div className="form-group">
+              <div className={styles.formGroup}>
                 <label htmlFor="email">אמייל</label>
                 <input
                   type="email"
@@ -38,7 +41,7 @@ const handleRegister=() => navigate("/")
                 />
               </div>
 
-              <div className="form-group">
+              <div className={styles.formGroup}>
                 <label htmlFor="password">סיסמה</label>
                 <input
                   type="password"
@@ -49,8 +52,10 @@ const handleRegister=() => navigate("/")
                 />
               </div>
 
-              <button type="submit" className="btn btn-primary" onClick={handleRegister}>הירשם</button>
-              <button type="button" className="btn btn-primary" onClick={() => navigate("/login")}>
+              <button type="submit" className={styles.btn} onClick={handleRegister}>
+                הירשם
+              </button>
+              <button type="button" className={styles.btn} onClick={() => navigate("/login")}>
                 יש לך כבר חשבון?
               </button>
             </form>

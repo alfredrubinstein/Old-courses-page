@@ -1,10 +1,13 @@
-/* Course.module.css */
 .courseContainer {
+    margin-top: 60px;
     padding: 20px;
     background-color: #f0f8ff;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .courseContainer img {
@@ -12,6 +15,8 @@
     max-width: 400px;
     border-radius: 15px;
     margin-bottom: 20px;
+    left: auto;
+    right: auto;
   }
   
   .courseContainer h1 {
