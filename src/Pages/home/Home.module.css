@@ -1,0 +1,139 @@
+body {
+  direction: rtl;
+}
+
+.header {
+  position: relative;
+}
+.header img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+.header .Overlay,
+.second_header .Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #00000096;
+  opacity: 0.4;
+}
+.header .HeaderContent {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  background: radial-gradient(circle, #6d6d6d 0%, #00ff62 50%, #000000 100%);
+  /* border: 1px solid #0000009d; */
+  box-shadow: 0px 0px 80px 100px #f6ff0034;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  border: 5px solid #48ff00;
+  border-radius: 10px;
+}
+
+.header .HeaderContent {
+  animation: scale 1s infinite;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.header .HeaderContent h6 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.header .HeaderContent h6 span {
+  font-size: 45px;
+  font-weight: 900;
+  color: var(--main);
+}
+
+/* About */
+.AboutContainer {
+  margin: 150px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.AboutImage {
+  width: 100%;
+}
+.AboutContainer img {
+  height: 300px;
+  display: inline;
+  object-fit: cover;
+}
+
+/* Details */
+.DetailsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.details {
+  max-width: 500px;
+  margin: 10px;
+}
+.details .box {
+  padding: 10px;
+  width: 300px;
+  overflow: hidden;
+  border: 1px solid #000;
+  margin: 10px;
+  border-radius: 10px;
+}
+.details .box img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.details .box:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.details .box_content {
+  padding: 10px;
+  text-align: center;
+}
+.details .box_content h6 {
+  font-size: 30px;
+  font-weight: 600;
+  border-bottom: 1px solid #000;
+}
+.details .box_content .btn {
+  width: 100%;
+  background: var(--main);
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.details .mid {
+  margin-top: 80px;
+}
+
+/* second Header */
+.second_header {
+  position: relative;
+  margin-bottom: 150px;
+}
+.second_header img {
+  height: 60vh;
+  width: 100%;
+  object-fit: cover;
+}

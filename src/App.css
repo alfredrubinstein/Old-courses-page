@@ -15,21 +15,9 @@
 }
 *::selection {
   background: var(--main);
-  color: #fff !important;
-}
-.btn {
-  width: 300px;
-  background: var(--main);
-  color: #fff !important;
-  border-radius: 15px;
-  transition: 0.2s;
-}
-.btn:hover {
-  width: 320px;
-  letter-spacing: 4px;
-  background: var(--main);
   color: #fff;
 }
+
 html::-webkit-scrollbar {
   width: 10px;
 }

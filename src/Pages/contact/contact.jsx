@@ -3,12 +3,12 @@ import "./contact.css";
 const Contact = () => {
   return (
     <>
-      <div className="contact">
+      <div className="Contact">
         <img src={ContactHeader} alt="" />
       </div>
 
       {/* Contact Form */}
-      <div className="contact_form container">
+      <div className="Contact_form container">
         <div className="row justify-content-center">
           <div className="col-sm-9">
             <form action="">

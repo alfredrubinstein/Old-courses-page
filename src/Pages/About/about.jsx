@@ -4,14 +4,14 @@ import AboutImg from "../../Images/home_about.jpg";
 const About = () => {
   return (
     <>
-      <div className="about_header">
+      <div className="About_header">
         <div>
           <img src={AboutHeader} alt="" />
         </div>
       </div>
 
       {/* About Section */}
-      <div className="about container">
+      <div className="About container">
         <div className="row">
           <div className="col-sm-5">
             <img src={AboutImg} className="img-fluid" alt="" />

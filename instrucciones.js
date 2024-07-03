@@ -11,7 +11,7 @@ Incluye secciones clave como:
 ✅Un encabezado atractivo con el nombre de tu plataforma y un menú de navegación.
 ✅Una sección destacada para mostrar los cursos más populares o nuevos.
 ✅Una lista de categorías de cursos para facilitar la navegación.
-✅Un formulario de contacto o suscripción a un boletín informativo.
+✅Un formulario de Contacto o suscripción a un boletín informativo.
 
 Estructura de datos:
 Crea un modelo de datos básico para los cursos, incluyendo:

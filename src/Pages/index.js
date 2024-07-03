@@ -1,7 +1,7 @@
-export { default as Home } from "./home/home";
-export { default as About } from "./About/about";
+export { default as Home } from "./Home/Home";
+export { default as About } from "./About/About";
 export { default as Gallery } from "./Gallery/gallery";
-export { default as Contact } from "./contact/contact";
+export { default as Contact } from "./Contact/Contact";
 export { default as Course} from "./Course/Course";
 export { default as Courses} from "./Courses/Courses";
 export { default as Login} from "./Login/Login";

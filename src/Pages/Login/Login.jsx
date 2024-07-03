@@ -6,7 +6,7 @@ const Login = ({ onRegister }) => {
   const handleRegister = () => navigate("/");
   return (
     <>
-      <div className="contact">
+      <div className="Contact">
         <img src={ContactHeader} alt="Contact Header" />
       </div>
 

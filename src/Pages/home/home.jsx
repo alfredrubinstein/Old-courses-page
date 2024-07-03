@@ -1,90 +1,69 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import data from './data';
-import "./home.css";
+import styles from './Home.module.css';
 
 const Home = () => {
   const handlerButton = () => {
-    window.location.href = "#about";
+    window.location.href = "#About";
   };
 
   return (
     <>
-      <div className="header">
+      <div className={styles.header}>
         <div>
-          <div className="img">
+          <div className={styles.img}>
             <img src={data.header.img} alt="" />
           </div>
-          <div className="Overlay"></div>
+          <div className={styles.Overlay}></div>
         </div>
-        <div className="HeaderContent">
+        <div className={styles.HeaderContent}>
           <h6>
             {" "}
             {data.header.title}
             <span> חייך </span> 
           </h6>
-          <button className="btn btn-secondary" onClick={handlerButton}>{data.header.buttonText}</button>
+          <button className={styles.btn} onClick={handlerButton}>
+            {data.header.buttonText}
+          </button>
         </div>
       </div>
 
-      <div id="about"></div>
-
+      <div id="About"></div>
       {/* About Section */}
-      <div className="about container">
-        <div className="row">
-          <div className="col-sm-5">
-            <img src={data.about.img} className="img-fluid" alt="" />
+      <div className={styles.AboutContainer}>
+        <div className={styles.row}>
+            <img src={data.About.img} className={styles.AboutImage} alt="" />
           </div>
-          <div className="col-sm-6">
-            <h6>{data.about.title}</h6>
-            <h5>{data.about.subtitle}</h5>
-            <p>{data.about.description}</p>
+            <h6>{data.About.title}</h6>
+            <h5>{data.About.subtitle}</h5>
+            <p>{data.About.description}</p>
           </div>
-        </div>
-      </div>
   
       {/* Second Header */}
-      <div className="second_header">
+      <div className={styles.second_header}>
         <div>
           <img src={data.secondHeader.img} alt="" />
         </div>
-        <div className="Overlay"></div>
+        <div className={styles.Overlay}></div>
       </div>
 
       {/* Details */}
-      <div className="details container">
-        <div className="row">
-          {data.details.slice(0, 3).map((item, index) => (
-            <div className="col-sm-4" key={index}>
-              <div className="box">
-                <img src={item.img} className="img-fluid" alt={item.title} />
-                <div className="box_content">
+      <div className={styles.DetailsContainer}>
+      <div className={styles.details}>
+        <div className={styles.row}>
+          {data.details.map((item, index) => (
+              <div key={index} className={styles.box}>
+                <img src={item.img}  alt={item.title} />
+                <div className={styles.box_content}>
                   <h6>{item.title}</h6>
                   <p>{item.description}</p>
-                  <Link to={`/course/${item.id}`} className="btn">{item.buttonText}</Link>
+                  <Link to={`/course/${item.id}`} className={styles.btn}>{item.buttonText}</Link>
                 </div>
               </div>
-            </div>
           ))}
         </div>
       </div>
-
-      {/* Details */}
-      <div className="details container">
-        <div className="row">
-          {data.details.slice(3, 6).map((item, index) => (
-            <div className="col-sm-4" key={index}>
-              <div className="box">
-                <img src={item.img} className="img-fluid" alt={item.title} />
-                <div className="box_content">
-                  <h6>{item.title}</h6>
-                  <p>{item.description}</p>
-                  <Link to={`/course/${item.id}`} className="btn">{item.buttonText}</Link>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </>
   );

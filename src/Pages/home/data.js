@@ -2,10 +2,10 @@
 const data = {
     header: {
       img: require("../../Images/8.jpg"),
-      title: "בוא תפתח את חלום",
+      title: "בוא תפתח איתנו את חלום",
       buttonText: "קרא עוד"
     },
-    about: {
+    About: {
       img: require("../../Images/home_about.jpg"),
       title: "מיטב הפרוייקטים מותאמים ליכולות של הילד שלך",
       subtitle: "אין כמו פרויקט טוב כדי לקדם את הילד שלך",
@@ -64,6 +64,22 @@ const data = {
       {
         img: require("../../Images/7.jpg"),
         title: "צור אתר לוח זמנים",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum labore consequatur quia aliquam nemo.",
+        buttonText: "הרשם עכשיו"
+      },
+      {
+        img: require("../../Images/9.jpg"),
+        title: "צור מחשבון אינטרנטי",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum labore consequatur quia aliquam nemo.",
+        buttonText: "הרשם עכשיו"
+      },  {
+        img: require("../../Images/9.jpg"),
+        title: "צור מחשבון אינטרנטי",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum labore consequatur quia aliquam nemo.",
+        buttonText: "הרשם עכשיו"
+      },  {
+        img: require("../../Images/9.jpg"),
+        title: "צור מחשבון אינטרנטי",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum labore consequatur quia aliquam nemo.",
         buttonText: "הרשם עכשיו"
       }

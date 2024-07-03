@@ -18,8 +18,8 @@ const Navbar = () => {
 
   const links = [
     { path: "/", name: "דף הבית" },
-    { path: "/about", name: "מי אנחנו" },
-    { path: "/contact", name: "צור קשר" },
+    { path: "/About", name: "מי אנחנו" },
+    { path: "/Contact", name: "צור קשר" },
     { path: "/gallery", name: "גלריה" },
     { path: "/courses", name: "קורסים" },
     { path: "/dashboard", name: "אזור אישי" },
