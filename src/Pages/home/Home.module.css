@@ -81,10 +81,11 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  background-color: greenyellow;
 }
 .details {
-  max-width: 500px;
   margin: 10px;
+  background-color: green;
 }
 .details .box {
   padding: 10px;
@@ -93,6 +94,8 @@ body {
   border: 1px solid #000;
   margin: 10px;
   border-radius: 10px;
+  background-color: rgb(156, 156, 175);
+  display: inline-block;
 }
 .details .box img {
   height: 200px;

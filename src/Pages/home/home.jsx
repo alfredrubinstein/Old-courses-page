@@ -21,7 +21,7 @@ const Home = () => {
           <h6>
             {" "}
             {data.header.title}
-            <span> חייך </span> 
+            <span> חייך </span>
           </h6>
           <button className={styles.btn} onClick={handlerButton}>
             {data.header.buttonText}
@@ -33,14 +33,14 @@ const Home = () => {
       {/* About Section */}
       <div className={styles.AboutContainer}>
         <div className={styles.row}>
-            <img src={data.About.img} className={styles.AboutImage} alt="" />
-          </div>
-            <h6>{data.About.title}</h6>
-            <h5>{data.About.subtitle}</h5>
-            <p>{data.About.description}</p>
-          </div>
-  
-      {/* Second Header */}
+          <img src={data.About.img} className={styles.AboutImage} alt="" />
+        </div>
+        <h6>{data.About.title}</h6>
+        <h5>{data.About.subtitle}</h5>
+        <p>{data.About.description}</p>
+      </div>
+
+      {/* Second Header -foto de separacion*/}
       <div className={styles.second_header}>
         <div>
           <img src={data.secondHeader.img} alt="" />
@@ -48,23 +48,23 @@ const Home = () => {
         <div className={styles.Overlay}></div>
       </div>
 
-      {/* Details */}
+      {/* Details -cursos*/}
       <div className={styles.DetailsContainer}>
-      <div className={styles.details}>
-        <div className={styles.row}>
-          {data.details.map((item, index) => (
+          <div className={styles.details}>
+            {data.details.map((item, index) => (
               <div key={index} className={styles.box}>
-                <img src={item.img}  alt={item.title} />
+                <img src={item.img} alt={item.title} />
                 <div className={styles.box_content}>
                   <h6>{item.title}</h6>
                   <p>{item.description}</p>
-                  <Link to={`/course/${item.id}`} className={styles.btn}>{item.buttonText}</Link>
+                  <Link to={`/course/${item.id}`} className={styles.btn}>
+                    {item.buttonText}
+                  </Link>
                 </div>
               </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-      </div>
     </>
   );
 };
