@@ -56,7 +56,7 @@ const Home = () => {
                 <img src={item.img} alt={item.title} />
                 <div className={styles.box_content}>
                   <h6>{item.title}</h6>
-                  <p>{item.description}</p>
+                  <p>{item.description.length > 20 ? `${item.description.substring(0, 100)}...` : item.description}</p>
                   <Link to={`/course/${item.id}`} className={styles.btn}>
                     {item.buttonText}
                   </Link>

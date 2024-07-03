@@ -35,53 +35,53 @@ const data = {
         img: require("../../Images/96.jpg"),
         title: "צור משחק אינטרנטי מגניב",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum labore consequatur quia aliquam nemo.",
-        buttonText: "הרשם עכשיו"
+        buttonText: "קרא עוד"
       },
       {
         img: require("../../Images/9.jpg"),
         title: "צור אתר אינטרנטי כדי להזמין את החברים שלך ליום הולדת",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum labore consequatur quia aliquam nemo.",
-        buttonText: "הרשם עכשיו"
+        buttonText: "קרא עוד"
       },
       {
         img: require("../../Images/7.jpg"),
         title: "צור בלוג אישי שבו תוכל לפרסם את החדשות שהכי מענינות אותך",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum labore consequatur quia aliquam nemo.",
-        buttonText: "הרשם עכשיו"
+        buttonText: "קרא עוד"
       },
       {
         img: require("../../Images/96.jpg"),
         title: "צור אתר לפירסום השיעורי בית שלך",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum labore consequatur quia aliquam nemo.",
-        buttonText: "הרשם עכשיו"
+        buttonText: "קרא עוד"
       },
       {
         img: require("../../Images/9.jpg"),
         title: "צור מחשבון אינטרנטי",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum labore consequatur quia aliquam nemo.",
-        buttonText: "הרשם עכשיו"
+        buttonText: "קרא עוד"
       },
       {
         img: require("../../Images/7.jpg"),
         title: "צור אתר לוח זמנים",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum labore consequatur quia aliquam nemo.",
-        buttonText: "הרשם עכשיו"
+        buttonText: "קרא עוד"
       },
       {
         img: require("../../Images/9.jpg"),
         title: "צור מחשבון אינטרנטי",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum labore consequatur quia aliquam nemo.",
-        buttonText: "הרשם עכשיו"
+        buttonText: "קרא עוד"
       },  {
         img: require("../../Images/9.jpg"),
         title: "צור מחשבון אינטרנטי",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum labore consequatur quia aliquam nemo.",
-        buttonText: "הרשם עכשיו"
+        buttonText: "קרא עוד"
       },  {
         img: require("../../Images/9.jpg"),
         title: "צור מחשבון אינטרנטי",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum labore consequatur quia aliquam nemo.",
-        buttonText: "הרשם עכשיו"
+        buttonText: "קרא עוד"
       }
     ],
     secondHeader: {
