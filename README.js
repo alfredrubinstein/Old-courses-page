@@ -6,4 +6,3 @@
 
 
 
-tapujriadama, of ,guezer ,2pollos, lebenim, jalab ,gbants,tapujim,bananot,anavim, shum
