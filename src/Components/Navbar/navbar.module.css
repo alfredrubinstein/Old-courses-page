@@ -1,0 +1,90 @@
+/* Navbar.module.css */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbarFixed {
+    background-color: #482d2d; /* Correspondiente a bg-gray-800 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Correspondiente a shadow-lg */
+  }
+  
+  .navbarTransparent {
+    background-color: rgba(0, 0, 0, 0.114);
+  }
+  
+  .container {
+    max-width: 1120px; /* Correspondiente a max-w-7xl */
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+  }
+  
+  .logo {
+    color: #8cff00; /* Correspondiente a text-green */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    /* letter-spacing: 0.1rem; */
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(90deg, #000000 0%, #0015ff 100%);
+    /* background-color: #ff00f7; */
+    padding: 0.5rem;
+    border-radius: 100%;
+
+  }
+  
+  .desktopLinks {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .mobileButton {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .mobileMenu {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .link {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #a0aec0; /* Correspondiente a text-gray-300 */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .link:hover {
+    background-color: #4a5568; /* Correspondiente a hover:bg-gray-700 */
+    color: white; /* Correspondiente a hover:text-white */
+  }
+  
+  .activeLink {
+    background-color: #1a202c; /* Correspondiente a bg-gray-900 */
+    color: white; /* Correspondiente a text-white */
+  }
+  

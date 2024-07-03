@@ -1,51 +1,85 @@
 import { NavLink } from "react-router-dom";
-import React, { useState } from "react";
-import style from "./navbar.module.css";
-import LinkComponent from "../LinkComponent/LinkComponent";
-import "./navbar.css";
+import React, { useState, useEffect } from "react";
+import styles from "./Navbar.module.css";
+
 const Navbar = () => {
-  const [navbar, setNavbar] = useState(false);
-  const ChangeBg = () => {
-    if (window.scrollY >= 100) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
-  window.addEventListener("scroll", ChangeBg);
-  const linksObject = [
+  const [isNavbarFixed, setIsNavbarFixed] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsNavbarFixed(window.scrollY >= 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const links = [
     { path: "/", name: "דף הבית" },
     { path: "/about", name: "מי אנחנו" },
     { path: "/contact", name: "צור קשר" },
     { path: "/gallery", name: "גלריה" },
     { path: "/courses", name: "קורסים" },
-    { path: "/dashboard", name: "אזור אישי"},
-    { path: "/login", name: "כניסה" },    
+    { path: "/dashboard", name: "אזור אישי" },
+    { path: "/login", name: "כניסה" },
   ];
 
   return (
-    <>
-      <nav
-        className={
-          navbar
-            ? "navbar navbar-expand fixed-top active"
-            : "navbar navbar-expand fixed-top"
-        }
-      >
-        <NavLink to="/" className="navbar-brand">
-          <span> עולם</span>טק
+    <nav
+      className={`${styles.navbar} ${isNavbarFixed ? styles.navbarFixed : styles.navbarTransparent}`}
+    >
+      <div className={styles.container}>
+        <NavLink to="/" className={styles.logo}>
+          <span>עולם</span>טק
         </NavLink>
-        <div>
-          <ul className="navbar-nav">
-            <li className="nav-item">
-{linksObject.map((link, index)=>(
-  <LinkComponent to={link.path} name={link.name} index={index}/>)
-  )}
-            </li>
-          </ul>
+
+        {/* Desktop Navigation Links */}
+        <div className={`hidden md:flex ${styles.desktopLinks}`}>
+          {links.map((link) => (
+            <NavLink
+              key={link.path}
+              to={link.path}
+              className={({ isActive }) =>
+                `${styles.link} ${isActive ? styles.activeLink : ""}`
+              }
+            >
+              {link.name}
+            </NavLink>
+          ))}
         </div>
-      </nav>
-    </>
+
+        {/* Mobile Hamburger Menu Button */}
+        <button
+          className={`${styles.mobileButton} md:hidden`}
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          🍔
+        </button>
+      </div>
+
+      {/* Mobile Navigation Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden">
+          <div className={styles.mobileMenu}>
+            {links.map((link) => (
+              <NavLink
+                key={link.path}
+                to={link.path}
+                className={({ isActive }) =>
+                  `${styles.link} ${isActive ? styles.activeLink : ""}`
+                }
+                onClick={() => setIsMobileMenuOpen(false)} // Close menu after clicking
+              >
+                {link.name}
+              </NavLink>
+            ))}
+          </div>
+        </div>
+      )}
+    </nav>
   );
 };
+
 export default Navbar;
