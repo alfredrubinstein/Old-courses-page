@@ -20,11 +20,12 @@ body {
   background: #00000096;
   opacity: 0.4;
 }
+/* contenido de div promocion */
 .header .HeaderContent {
   position: absolute;
   /* top: 50%;
   left: 20%; */
-  top: 50%;
+  top: 35%;
   left: 20%;
   right: 20%;
   background: radial-gradient(circle, #6d6d6d 0%, #00ff62 50%, #000000 100%);
@@ -52,83 +53,9 @@ body {
   }
 }
 
-
 .header .HeaderContent h6 {
   font-size: 40px;
   font-weight: 600;
-}
-.header .HeaderContent h6 span {
-  font-size: 45px;
-  font-weight: 900;
-  color: var(--main);
-}
-
-/* About */
-.AboutContainer {
-    background-color: rgb(163, 163, 113);
-  margin: 150px auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-.AboutContainer img {
-  height: 300px;
-  display: inline;
-  object-fit: cover;
-}
-
-/* Details */
-.DetailsContainer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  background-color: greenyellow;
-}
-.details {
-  margin: 10px;
-  background-color: green;
-}
-.details .box {
-  padding: 10px;
-  width: 300px;
-  overflow: hidden;
-  border: 1px solid #000;
-  margin: 10px;
-  border-radius: 10px;
-  background-color: rgb(156, 156, 175);
-  display: inline-block;
-}
-.details .box img {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-  transition: 0.3s;
-  border-radius: 10px;
-}
-.details .box:hover {
-  transform: scale(1.03);
-  cursor: pointer;
-}
-.details .box_content {
-  padding: 10px;
-  text-align: center;
-}
-.details .box_content h6 {
-  font-size: 30px;
-  font-weight: 600;
-  border-bottom: 1px solid #000;
-}
-.details .box_content .btn {
-  width: 100%;
-  background: var(--main);
-  color: white;
-  border-radius: 10px;
-  padding: 5px;
-  margin-top: 10px;
-  text-decoration: none;
-}
-.details .mid {
-  margin-top: 80px;
 }
 
 /* second Header */
@@ -137,6 +64,7 @@ body {
   margin-bottom: 150px;
 }
 .second_header img {
+  margin-top: 100px;
   height: 60vh;
   width: 100%;
   object-fit: cover;

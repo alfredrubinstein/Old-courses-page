@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import courses from '../Course/coursesData';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import courses from '../Course/coursesData'; 
+import styles from './Courses.module.css';
 
 const Courses = () => {
   const navigate = useNavigate();
@@ -11,16 +11,25 @@ const Courses = () => {
   };
 
   return (
-    <div className="container">
-      <div className="row">
-        {courses.map(course => (
-          <div key={course.id} className="col-md-4 mb-4">
-            <div className="card" onClick={() => handleClick(course.id)}>
-              <img src={course.imageUrl} className="card-img-top" alt={course.name} />
-              <div className="card-body">
-                <h5 className="card-title">{course.name}</h5>
-                <p className="card-text">{course.title}</p>
-                <button className="btn btn-primary">Ver Curso</button>
+    <div className={styles.DetailsContainer}>
+      <div className={styles.details}>
+        {courses.map((course, index) => ( 
+          <div key={index} className={styles.box} onClick={() => handleClick(course.id)}> 
+          {/* Changed data.details to courses, and added onClick */}
+            <img src={course.img} alt={course.title} />
+            <div className={styles.box_content}>
+              <h6>{course.title}</h6>
+              <p>
+                {course.description.length > 100 
+                  ? `${course.description.substring(0, 100)}...` 
+                  : course.description}
+              </p> 
+              {/* Increased character limit to 100 for better readability */}
+            </div>
+            <div className={styles.courseBtn}>
+              <div className={styles.btn}>
+                <>קרא עוד</>
+                 {/* Removed extra button element and adjusted styling */}
               </div>
             </div>
           </div>

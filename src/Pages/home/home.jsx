@@ -28,8 +28,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="About"></div>
-      {/* About Section */}
+      {/* <div id="About"></div>
       <div className={styles.AboutContainer}>
         <div className={styles.row}>
           <img src={data.About.img} className={styles.AboutImage} alt="" />
@@ -37,7 +36,7 @@ const Home = () => {
         <h6>{data.About.title}</h6>
         <h5>{data.About.subtitle}</h5>
         <p>{data.About.description}</p>
-      </div>
+      </div> */}
 
       {/* Second Header -foto de separacion*/}
       <div className={styles.second_header}>
@@ -47,7 +46,7 @@ const Home = () => {
         <div className={styles.Overlay}></div>
       </div>
 
-      {/* Details -cursos*/}
+      {/* Details -cursos
       <div className={styles.DetailsContainer}>
           <div className={styles.details}>
             {data.details.map((item, index) => (
@@ -56,14 +55,16 @@ const Home = () => {
                 <div className={styles.box_content}>
                   <h6>{item.title}</h6>
                   <p>{item.description.length > 20 ? `${item.description.substring(0, 100)}...` : item.description}</p>
-                  <Link to={`/course/${item.id}`} className={styles.btn}>
-                    {item.buttonText}
-                  </Link>
                 </div>
+                <div className={styles.courseBtn}>
+                <Link to={`/course/${item.id}`} className={styles.btn}>
+                    <>קרא עוד</>
+                  </Link>
+                  </div>
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
     </>
   );
 };
