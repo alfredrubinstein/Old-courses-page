@@ -23,6 +23,7 @@
     margin-bottom: 20px;
     font-weight: 700;
     text-align: center;
+    color: #ff69b4;
   }
   
   .form-group {
@@ -44,7 +45,7 @@
   }
   
   .form-control:focus {
-    border-color: #007bff;
+    border-color: #dc22a4;
     outline: none;
   }
   
@@ -52,16 +53,18 @@
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #ff69b4;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-right: auto;
+    margin-left: auto;
   }
   
   .btn:hover {
-    background-color: #0056b3;
+    background-color: #fd3499;
   }
   
   @media (min-width: 768px) {

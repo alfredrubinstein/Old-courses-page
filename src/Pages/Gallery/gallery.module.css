@@ -41,7 +41,29 @@
   .gallery_main .box:hover {
     transform: translateY(-10px);
   }
-  
+  .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 5px;
+    text-align: center;
+    background-color: rgba(68, 0, 255, 0.233);
+  }
+    .titleImage{
+        padding: 5px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 5px;
+    text-align: center;
+    background-color: rgba(0, 255, 55, 0.432);
+  }
+  .description{
+    padding: 5px;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #008cff6f;
+  }
+
   @media (max-width: 768px) {
     .gallery_main .box img {
       height: 200px;

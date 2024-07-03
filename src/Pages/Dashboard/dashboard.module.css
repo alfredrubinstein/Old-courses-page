@@ -23,11 +23,27 @@
     font-size: 18px;
   }
   
+  /* Grid styling */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Grid item styling */
+  .gridItem {
+    background: #ffe4e1; /* Light pink */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
   /* Stats styling */
   .stats {
-    margin-bottom: 20px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
   }
   
   .statItem {
@@ -35,8 +51,7 @@
     padding: 20px;
     border-radius: 15px;
     text-align: center;
-    flex: 1;
-    margin: 0 10px;
+    margin-bottom: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
@@ -53,32 +68,24 @@
   
   /* Notifications styling */
   .notifications {
-    margin-bottom: 20px;
-    background: #e0ffff; /* Light cyan */
-    padding: 20px;
-    border-radius: 15px;
-  }
-  
-  .notifications h3 {
-    color: #1e90ff; /* Dodger blue */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .notification {
-    background: #fff;
+    background: #e0ffff; /* Light cyan */
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
     margin-bottom: 10px;
   }
   
-  .notification p {
-    margin: 0;
-  }
-  
   /* Course cards styling */
-  .row {
+  .courses {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   
   .courseCard {
@@ -87,7 +94,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     overflow: hidden;
-    background: #ffe4e1; 
+    background: #fff;
     transition: transform 0.2s;
   }
   

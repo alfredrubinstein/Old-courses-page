@@ -1,20 +1,20 @@
 const user = {
-  name: "Juan Perez",
-  email: "juan.perez@example.com",
+  name: "דני כהן",
+  email: "dani.cohen@example.com",
   registeredCourses: [
-    { id: 1, name: "Curso de React", title: "Aprende React desde cero", imageUrl: "../../Images/1.jpg" },
-    { id: 2, name: "Curso de Node.js", title: "Desarrollo con Node.js", imageUrl: "../../Images/2.jpg" },
-    { id: 3, name: "Curso de CSS", title: "Maquetación con CSS", imageUrl: "../../Images/3.jpg" },
+    { id: 1, name: "קורס רובוטיקה למתחילים", title: "בנה את הרובוט הראשון שלך!", imageUrl:require( "../../Images/1.jpg" )},
+    { id: 2, name: "רובוטיקה מתקדמת", title: "תכנות ותנועה מתקדמת לרובוטים", imageUrl:require( "../../Images/2.jpg") },
+    { id: 3, name: "רובוטיקה וחיישנים", title: "למד על חיישנים ורובוטים אינטראקטיביים", imageUrl: require("../../Images/3.jpg") },
   ],
   stats: [
-    { id: 1, value: 10, label: "Cursos completados" },
-    { id: 2, value: 5, label: "Cursos en progreso" },
-    { id: 3, value: 3, label: "Certificados obtenidos" },
+    { id: 1, value: 5, label: "קורסים שהושלמו" },
+    { id: 2, value: 2, label: "קורסים בהתקדמות" },
+    { id: 3, value: 1, label: "תעודות שהתקבלו" },
   ],
   notifications: [
-    { id: 1, message: "Nueva actualización en el curso de React" },
-    { id: 2, message: "Certificado disponible para el curso de Node.js" },
-    { id: 3, message: "Nuevo curso disponible: Desarrollo con Python" },
+    { id: 1, message: "עדכון חדש בקורס רובוטיקה למתחילים" },
+    { id: 2, message: "תעודה זמינה עבור הקורס רובוטיקה מתקדמת" },
+    { id: 3, message: "קורס חדש זמין: בניית רובוטים עם Arduino" },
   ],
 };
 

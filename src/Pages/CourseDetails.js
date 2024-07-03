@@ -14,10 +14,9 @@ const CourseDetails = () => {
           <img src={course.img} className="img-fluid" alt={course.title} />
           <h2>{course.title}</h2>
           <p>{course.description}</p>
-          {/* Puedes agregar más detalles del curso aquí */}
         </>
       ) : (
-        <p>Course not found</p>
+        <p>הקורס לא נמצא!</p>
       )}
     </div>
   );
