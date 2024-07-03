@@ -21,8 +21,7 @@ const Home = () => {
           <h6>
             {" "}
             {data.header.title}
-            <span> חייך </span>
-          </h6>
+               </h6>
           <button className={styles.btn} onClick={handlerButton}>
             {data.header.buttonText}
           </button>

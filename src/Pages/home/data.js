@@ -2,8 +2,8 @@
 const data = {
     header: {
       img: require("../../Images/8.jpg"),
-      title: "בוא תפתח איתנו את חלום",
-      buttonText: "קרא עוד"
+      title: "מבצעים מיוחדים על מיטב הקורסים שלנו",
+      buttonText: "קרא עוד והצטרף אלינו"
     },
     About: {
       img: require("../../Images/home_about.jpg"),
