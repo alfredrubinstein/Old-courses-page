@@ -1,13 +1,15 @@
 import "./App.css";
 
-import { NavBar, Footer } from "./Components";
+import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
 import { BrowserRouter , Routes, Route } from "react-router-dom";
 import { Home, About, Gallery, Contact, Course, Courses,Dashboard,Login, Register,StudyPage,PaymentPage } from "./Pages";
+
 const App = () => {
   return (
     <>
       <BrowserRouter>
-        <NavBar />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/login" element={<Login />}></Route>
