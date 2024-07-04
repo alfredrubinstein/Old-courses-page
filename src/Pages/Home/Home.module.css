@@ -1,0 +1,73 @@
+body {
+  direction: rtl;
+  background-color: #b0b5de;
+}
+
+.header {
+  position: relative;
+}
+.header img {
+  /* margin-top: 63px; */
+  height: 88vh;
+  width: 100%;
+  object-fit: cover;
+}
+.header .Overlay,
+.second_header .Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #00000096;
+  opacity: 0.4;
+}
+/* contenido de div promocion */
+.header .HeaderContent {
+  position: absolute;
+  /* top: 50%;
+  left: 20%; */
+  top: 35%;
+  left: 20%;
+  right: 20%;
+  background: radial-gradient(circle, #6d6d6d 0%, #9500ff 50%, #000000 100%);
+  /* border: 1px solid #0000009d; */
+  box-shadow: 0px 0px 80px 100px #f6ff0034;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  border: 5px solid #d400ff;
+  border-radius: 10px;
+}
+
+.header .HeaderContent {
+  animation: scale 1s infinite;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.header .HeaderContent h6 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* second Header */
+.second_header {
+  position: relative;
+  margin-bottom: 150px;
+}
+.second_header img {
+  margin-top: 100px;
+  height: 60vh;
+  width: 100%;
+  object-fit: cover;
+}
