@@ -8,8 +8,12 @@ const Dashboard = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h2>אזור אישי של {name}</h2>
-        <p>אמייל: {email}</p>
+        <h2>משתמש רשום: <input type='text'  placeholder={name}></input>
+        {/* אמייל:  <input type='text'  placeholder={email}></input> */}
+        <div className={styles.output}>
+        <button>יציאה</button>
+        </div>
+        </h2>
       </div>
 
       <div className={styles.grid}>
@@ -18,7 +22,7 @@ const Dashboard = () => {
           <div className={styles.stats}>
             {stats.map(stat => (
               <div key={stat.id} className={styles.statItem}>
-                <h3>{stat.value}</h3>
+                <h4>{stat.value} :</h4>
                 <p>{stat.label}</p>
               </div>
             ))}

@@ -1,9 +1,11 @@
 /* General container styling */
+body{
+  background-color: #b0b5de;
+}
 .container {
-    margin-top: 40px;
+    margin-top: 64px;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 15px;
+    background-color: #dbcaca;
   }
   
   /* Header styling */
@@ -11,12 +13,21 @@
     margin-bottom: 20px;
     text-align: center;
     color: #333;
+    background-color: rgb(181, 168, 240);
+    border-radius: 15px;
+    padding: 10px;
   }
   
   .header h2 {
     font-size: 28px;
     font-weight: 700;
-    color: #ff69b4; /* Pink color */
+    color: #7d69ff; 
+    background-color: rgb(8, 8, 8);
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
   }
   
   .header p {
@@ -32,53 +43,63 @@
   
   /* Grid item styling */
   .gridItem {
-    background: #ffe4e1; /* Light pink */
-    padding: 20px;
-    border-radius: 15px;
+      background-color: #b0b5de;
+      padding: 10px;
+    border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
+  .output{
+    background-color: #fff;
+    width: 90px;
+    border-radius: 20px;
+  }
   /* Stats styling */
   .stats {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
   }
   
   .statItem {
-    background: #fffacd; /* Light yellow */
-    padding: 20px;
+    background: #ffffff; 
+    padding: 5px;
     border-radius: 15px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .statItem h3 {
     font-size: 36px;
     margin-bottom: 10px;
-    color: #ff4500; /* Orange red */
+    color: #2bff00; 
   }
   
-  .statItem p {
-    font-size: 16px;
-    color: #666;
+
+  .gridItem h4{
+    color:#5f5353;
+    font-size:16px;
+    padding-right: 20px;
   }
-  
   /* Notifications styling */
   .notifications {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: brown;
+    border-radius: 20px;
+    padding: 10px;
   }
   
   .notification {
-    background: #e0ffff; /* Light cyan */
-    padding: 15px;
+    background: #00ffff; 
+    padding: 5px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    width: 100%;
   }
   
   /* Course cards styling */
@@ -86,6 +107,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: darkcyan;
+    border-radius: 20px;
+    padding: 10px;
   }
   
   .courseCard {
@@ -94,7 +118,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     overflow: hidden;
-    background: #fff;
+    background: #c9b3b3;
     transition: transform 0.2s;
   }
   

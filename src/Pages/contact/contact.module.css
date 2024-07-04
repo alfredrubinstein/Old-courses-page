@@ -1,4 +1,7 @@
 /* contact.module.css */
+body{
+  background-color: #b0b5de;
+}
 .Contact {
     position: relative;
     width: 100%;

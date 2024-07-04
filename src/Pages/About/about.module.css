@@ -1,9 +1,12 @@
 /* General styling */
-.About_header img {
+/* .About_header img {
     width: 100%;
+  } */
+  body{
+    background-color: #b0b5de;
   }
-  
   .About {
+    margin-top: 64px;
     padding: 2rem 0;
   }
   

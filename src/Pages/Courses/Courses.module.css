@@ -1,12 +1,14 @@
 
 .DetailsContainer {
     margin-top: 65px;
-    background-color: greenyellow;
+    /* background-color: greenyellow;     background-color: #b0b5de; */
+    
   }
   .details {
     margin: 10px;
-    background-color: green;
-    display: flex;
+    body{
+      background-color: #7b7d92;
+    }    display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
