@@ -5,9 +5,9 @@ import styles from "./contact.module.css";
 const Contact = () => {
   return (
     <>
-      <div className={styles.Contact}>
+      {/* <div className={styles.Contact}>
         <img src={ContactHeader} alt="" />
-      </div>
+      </div> */}
 
       {/* Contact Form */}
       <div className={styles.Contact_form}>

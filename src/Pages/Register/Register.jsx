@@ -9,9 +9,9 @@ const Register = ({ onLogin }) => {
 
   return (
     <>
-      <div className={styles.contact}>
+      {/* <div className={styles.contact}>
         <img src={ContactHeader} alt="Contact Header" />
-      </div>
+      </div> */}
 
       {/* Register Form */}
       <div className={`${styles.register_form} container`}>
