@@ -7,17 +7,15 @@ const Dashboard = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.header}>
-        <h2>משתמש רשום: <input type='text'  placeholder={name}></input>
-        {/* אמייל:  <input type='text'  placeholder={email}></input> */}
+      <header className={styles.header}>
+        <h2>משתמש רשום: <input type='text' placeholder={name} className={styles.input} /></h2>
         <div className={styles.output}>
-        <button>יציאה</button>
+          <button className={styles.logoutBtn}>יציאה</button>
         </div>
-        </h2>
-      </div>
+      </header>
 
-      <div className={styles.grid}>
-        <div className={styles.gridItem}>
+      <main className={styles.grid}>
+        <section className={styles.gridItem}>
           <h3>סטטיסטיקות</h3>
           <div className={styles.stats}>
             {stats.map(stat => (
@@ -27,9 +25,9 @@ const Dashboard = () => {
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
-        <div className={styles.gridItem}>
+        <section className={styles.gridItem}>
           <h3>הודעות</h3>
           <div className={styles.notifications}>
             {notifications.map(notification => (
@@ -38,14 +36,14 @@ const Dashboard = () => {
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
-        <div className={styles.gridItem}>
+        <section className={styles.gridItem}>
           <h3>קורסים שנרשמתה אליהם</h3>
           <div className={styles.courses}>
             {registeredCourses.map(course => (
               <div key={course.id} className={styles.courseCard}>
-                <img src={course.imageUrl} alt={course.name} />
+                <img src={course.imageUrl} alt={course.name} className={styles.courseImage} />
                 <div className={styles.courseCardBody}>
                   <h5>{course.name}</h5>
                   <p>{course.title}</p>
@@ -54,8 +52,8 @@ const Dashboard = () => {
               </div>
             ))}
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
   );
 };
