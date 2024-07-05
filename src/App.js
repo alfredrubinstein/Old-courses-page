@@ -3,14 +3,11 @@ import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import NotFound from "./Pages/NotFound/NotFound";
-import { BrowserRouter , Routes, Route, useNavigate } from "react-router-dom";
+import { BrowserRouter , Routes, Route } from "react-router-dom";
 import { Home, About, Gallery, Contact, Course, Courses,Dashboard,Login, Register,StudyPage,PaymentPage } from "./Pages";
 
 const App = () => {
-  // const navigate=useNavigate();
-  // const handlerNavigate = () => {
-  //   navigate("/");
-  // }
+
 
   return (
     <>
@@ -28,7 +25,7 @@ const App = () => {
           <Route path="/dashboard" element={<Dashboard/>}></Route>
           <Route path="/studypage" element={<StudyPage/>}></Route>
           <Route path="/paymentpage" element={<PaymentPage/>}></Route>
-          {/* <Route path="*" element={<NotFound  handlerNavigate={ handlerNavigate} />}></Route> */}
+          <Route path="*" element={<NotFound/>}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -14,7 +14,7 @@ const navigate=useNavigate();
   if (!course) {
     return (
       <div>
-      <NotFound handlerNavigate={handlerNavigate}/>
+      <NotFound handlerNavigate={handlerNavigate} errorText={"חזור לדף הקורסים"}/>
     </div>
   )}
 
