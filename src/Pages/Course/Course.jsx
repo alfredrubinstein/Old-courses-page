@@ -1,15 +1,22 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import courses from './coursesData';
 import styles from './course.module.css';
+import NotFound from '../NotFound/NotFound';
 
 const Course = () => {
   const { id } = useParams();
   const course = courses.find(course => course.id === parseInt(id));
-
-  if (!course) {
-    return <div>הקורס לא נמצא</div>;
+const navigate=useNavigate();
+  const handlerNavigate=()=>{
+    navigate('/courses');
   }
+  if (!course) {
+    return (
+      <div>
+      <NotFound handlerNavigate={handlerNavigate}/>
+    </div>
+  )}
 
   return (
     <div className={styles.courseContainer}>

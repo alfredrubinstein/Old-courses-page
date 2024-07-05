@@ -3,12 +3,11 @@
 }
 .header img {
   /* margin-top: 63px; */
-  height: 88vh;
+  height: 88.4vh;
   width: 100%;
   object-fit: cover;
 }
-.header .Overlay,
-.second_header .Overlay {
+.header .Overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -36,6 +35,11 @@
   border-radius: 10px;
 }
 
+.header .HeaderContent h6 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
 .header .HeaderContent {
   animation: scale 4s infinite;
 }
@@ -51,19 +55,3 @@
   }
 }
 
-.header .HeaderContent h6 {
-  font-size: 40px;
-  font-weight: 600;
-}
-
-/* second Header */
-.second_header {
-  position: relative;
-  margin-bottom: 150px;
-}
-.second_header img {
-  margin-top: 100px;
-  height: 60vh;
-  width: 100%;
-  object-fit: cover;
-}

@@ -28,7 +28,7 @@
   }
   
   .logoutBtn {
-    background-color: #ff5a5f;
+    background-color: #c5caff;
     border: none;
     padding: 10px 20px;
     color: #fff;
@@ -38,7 +38,7 @@
   }
   
   .logoutBtn:hover {
-    background-color: #e0464d;
+    background-color: #0402ab;
   }
   
   .grid {

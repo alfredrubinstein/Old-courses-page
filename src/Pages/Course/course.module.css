@@ -8,11 +8,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 77.7vh;
   }
-  
+
   .courseContainer img {
-    width: 100%;
-    max-width: 400px;
+    width: 300px;
+    /* max-width: 300px; */
     border-radius: 15px;
     margin-bottom: 20px;
     left: auto;
@@ -43,6 +44,7 @@
     border-radius: 15px;
     margin-top: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 110px;
   }
   
   .courseContainer .btn {
@@ -51,7 +53,7 @@
     border: none;
     border-radius: 15px;
     padding: 10px 20px;
-    margin: 10px 0;
+    margin: 3px 0;
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease;

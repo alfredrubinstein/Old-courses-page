@@ -2,10 +2,16 @@ import "./App.css";
 
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
-import { BrowserRouter , Routes, Route } from "react-router-dom";
+import NotFound from "./Pages/NotFound/NotFound";
+import { BrowserRouter , Routes, Route, useNavigate } from "react-router-dom";
 import { Home, About, Gallery, Contact, Course, Courses,Dashboard,Login, Register,StudyPage,PaymentPage } from "./Pages";
 
 const App = () => {
+  // const navigate=useNavigate();
+  // const handlerNavigate = () => {
+  //   navigate("/");
+  // }
+
   return (
     <>
       <BrowserRouter>
@@ -22,6 +28,7 @@ const App = () => {
           <Route path="/dashboard" element={<Dashboard/>}></Route>
           <Route path="/studypage" element={<StudyPage/>}></Route>
           <Route path="/paymentpage" element={<PaymentPage/>}></Route>
+          {/* <Route path="*" element={<NotFound  handlerNavigate={ handlerNavigate} />}></Route> */}
         </Routes>
         <Footer />
       </BrowserRouter>
