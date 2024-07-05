@@ -5,7 +5,7 @@ import imagesData from './imagesData';
 
 const Gallery = () => {
   return (
-    <>
+    <div className={styles.container}>
       <div className={styles.gallery}>
         <img src={GalleryHeader} alt="Gallery Header" />
       </div>
@@ -24,7 +24,7 @@ const Gallery = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

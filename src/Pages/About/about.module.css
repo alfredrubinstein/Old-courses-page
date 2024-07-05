@@ -1,11 +1,25 @@
 /* General styling */
-/* .About_header img {
+.About_header img {
     width: 100%;
-  } */
-  body{
-    background-color: #b0b5de;
   }
+ .aboutContainer h6{
+background-color: #0015ff;
+color: white;
+font-size: 30px;
+text-align: center;
+border-radius: 10px;
+ }
+ .aboutContainer h5{
+  font-size: 20px;
+  text-align: center;  
+ }
+ .aboutContainer p{
+  align-content: center;
+  align-items: center;
+  
+ }
   .About {
+    background-color: #dadefd;
     margin-top: 64px;
     padding: 2rem 0;
   }
@@ -19,34 +33,24 @@
   
   .colsm5 {
     flex: 0 0 41.666667%;
+    /* background-color: green; */
   }
   
   .colsm6 {
     flex: 0 0 50%;
+    background-color: rgb(213, 254, 250);
+    border-radius: 10px;
+    padding: 20px;
+
   }
   
   .imgfluid {
     max-width: 100%;
     height: auto;
   }
-  
-  h6 {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  h5 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-  }
-  
-  p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
   .btn {
-    background-color: #ff69b4;
+    background-color: #0051ff;
+    color: blanchedalmond;
     border: none;
     border-radius: 15px;
     padding: 10px 20px;
@@ -57,6 +61,7 @@
   }
   
   .btn:hover {
-    background-color: #ff1493;
+    background-color: #1495ff;
   }
+
   

@@ -10,11 +10,12 @@ const About = () => {
   const navigate = useNavigate();
   return (
     <>
-      {/* <div className={styles.About_header}>
+    <div className={styles.aboutContainer}>
+      <div className={styles.About_header}>
         <div>
           <img src={AboutHeader} alt="About Header" />
         </div>
-      </div> */}
+      </div>
 
       <div className={styles.About}>
         {/* Section 1: About Us */}
@@ -71,6 +72,7 @@ const About = () => {
         <div className={styles.btn} onClick={() => navigate("/courses")}>
           רוצה להירשם לקורסים?
         </div>
+      </div>
       </div>
     </>
   );

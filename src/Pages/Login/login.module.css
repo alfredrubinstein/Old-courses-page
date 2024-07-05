@@ -22,7 +22,7 @@
     margin: 20px 0;
     font-weight: 600;
     text-align: center;
-    color: #ff69b4;
+    color: #2a2dff;
   }
   
   .login_form .form-group {
@@ -40,7 +40,8 @@
   }
   
   .login_form .btn {
-    background-color: #ff69b4;
+    background-color: #5947ff;
+    color: white;
     border: none;
     border-radius: 15px;
     padding: 10px 20px;
@@ -53,7 +54,7 @@
   }
   
   .login_form .btn:hover {
-    background-color: #ff1493;
+    background-color: #06006f;
   }
   
   .login_form .btn-secondary {

@@ -15,7 +15,7 @@
     text-align: center;
     font-size: 24px;
     font-weight: 700;
-    color: #ff69b4; /* Pink color */
+    color: #6976ff; /* Pink color */
     margin-bottom: 20px;
   }
   
@@ -31,7 +31,7 @@
   .form-control {
     border-radius: 10px;
     padding: 10px;
-    border: 2px solid #1e90ff; /* Dodger blue */
+    border: 2px solid #0080ff; /* Dodger blue */
     margin-top: 5px;
   }
   
@@ -39,7 +39,7 @@
     display: block;
     width: 100%;
     padding: 15px;
-    background-color: #ff69b4; /* Pink color */
+    background-color: #6976ff; /* Pink color */
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -50,6 +50,6 @@
   }
   
   .btn:hover {
-    background-color: #ff1493; /* Deep pink */
+    background-color: #00087a; /* Deep pink */
   }
   
