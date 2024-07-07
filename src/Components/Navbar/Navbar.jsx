@@ -29,12 +29,18 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.navbar} ${isNavbarFixed ? styles.navbarFixed : styles.navbarTransparent}`}
+      className={`${styles.navbar} ${
+        isNavbarFixed ? styles.navbarFixed : styles.navbarTransparent
+      }`}
     >
       <div className={styles.container}>
+      <div className={styles.logo}>
 
-<NavLink to='/'> <Logo/> </NavLink>       
-
+  <NavLink to="/">
+          {" "}
+          <Logo />{" "}
+        </NavLink>
+      </div>
 
         <div className={`hidden md:flex ${styles.desktopLinks}`}>
           {links.map((link) => (

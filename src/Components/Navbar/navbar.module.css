@@ -22,17 +22,30 @@
     justify-content: space-between;
     align-items: center;
     height: 4rem;
+    /* display: none; */
+  }
+  .logo {
+    margin-right: 30px;
+    margin-left: 20px;
   }
   
-
-  
+/* en pantallas grandes */
+  @media (min-width: 569px) {
   .desktopLinks {
     /* background-color: #2f00ffab; */
     /* border-radius: 10px; */
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
+    margin-left: 1rem;
   }
-  
+  .mobileButton {
+    display: none;
+  }
+}
+ 
+/* en pantallas chicas */
+  @media (max-width: 568px) {
   .mobileButton {
     color: white;
     background: black;
@@ -42,9 +55,13 @@
     background-color: green;
     margin-left: 3rem;
   }
+  .desktopLinks {
+    display: none;
+  }
+  }
   
-  /* .mobileMenu {
-    background-color: #000000;
+  .mobileMenu {
+    background-color: #7300ff8e;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-top: 0.5rem;
@@ -52,7 +69,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-  } */
+  }
   
   .link {
     padding-left: 0.75rem;
